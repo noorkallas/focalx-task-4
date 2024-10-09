@@ -1,0 +1,67 @@
+:root {
+  --bs-primary: #3fbabf;
+  --bs-primary-rgb: 63, 186, 191;
+}
+
+.btn-primary {
+  --bs-btn-bg: #3fbabf !important;
+  --bs-btn-border-color: #3fbabf !important;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: var(--bs-primary) !important;
+}
+
+.carousel-item {
+  height: calc(100vh - 114px) !important;
+}
+.carousel-indicators .active {
+  background-color: var(--bs-primary) !important;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.carousel-caption {
+  width: 70%;
+  min-height: 200px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-top: 2px solid var(--bs-primary);
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.special-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: var(--bs-primary);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+}
+.nav-pills .nav-link {
+  color: #000 !important;
+  background-color: transparent !important;
+}
+.nav-pills .nav-link.active {
+  color: var(--bs-primary) !important;
+  border-right: 1px solid var(--bs-primary);
+  border-radius: 0;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.dotted-border {
+  border-style: dashed !important;
+}
